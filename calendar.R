@@ -24,13 +24,18 @@ holidays = holidaysOil
 
 expiry = expiry_table
 
-write.xlsx(holidays, file="holidaysOil.xlsx", sheetName="holidays", 
+trade_cycle = tradeCycle
+
+write.xlsx(holidays, file="tradeCalendar.xlsx", sheetName="holidays", 
            col.names=TRUE, row.names=FALSE)
 
-write.xlsx(expiry, file="holidaysOil.xlsx", sheetName="expiry", 
+write.xlsx(expiry, file="tradeCalendar.xlsx", sheetName="expiry", 
            col.names=TRUE, row.names=FALSE, append=TRUE)
 
-write.xlsx(tradingdays, file="holidaysOil.xlsx", sheetName="tradingdays", 
+write.xlsx(tradingdays, file="tradeCalendar.xlsx", sheetName="tradingdays", 
+           col.names=TRUE, row.names=FALSE, append=TRUE)
+
+write.xlsx(trade_cycle, file="tradeCalendar.xlsx", sheetName="tradecycle", 
            col.names=TRUE, row.names=FALSE, append=TRUE)
 
 
